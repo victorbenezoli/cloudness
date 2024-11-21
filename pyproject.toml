@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cloudness"
+version = "0.1.0"
+description = "The 'cloudness' is a library that converts solar radiation into cloudiness and vice versa."
+authors = ["Victor Benezoli <victorbenezoli@gmail.com>"]
+readme = "README.md"
+license = "GPL-3.0"
+include = [
+    { path = "cloudness/src/utils" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.1.3"
+xarray = "^2024.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
